@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Andres Felipe Polo Ortega</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #475569;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- Encabezado -->
+        <header class="flex flex-col sm:flex-row items-center text-center sm:text-left mb-12">
+            <!-- Foto de Perfil -->
+            <div class="w-32 h-32 sm:w-36 sm:h-36 mb-4 sm:mb-0 sm:mr-8 flex-shrink-0">
+                <img src="http://googleusercontent.com/file_content/1" alt="Foto de perfil de Andres Felipe Polo Ortega" class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white">
+            </div>
+
+            <!-- Información Principal -->
+            <div class="flex-grow">
+                <h1 class="text-4xl font-bold text-slate-900">Andrés Felipe Polo Ortega</h1>
+                <h2 class="text-xl font-semibold text-sky-600 mt-1">Desarrollador de Software Backend (TypeScript & .NET)</h2>
+                <div class="mt-3 text-slate-600 flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-2">
+                    <span>Cali, Colombia</span>
+                    <span>|</span>
+                    <a href="mailto:andres.polo.ortega@gmail.com" class="hover:text-sky-600">andres.polo.ortega@gmail.com</a>
+                    <span>|</span>
+                    <span>3173564052</span>
+                </div>
+            </div>
+
+            <!-- Iconos Sociales -->
+            <div class="flex space-x-3 mt-4 sm:mt-0 sm:ml-6">
+                <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="text-slate-500 hover:text-sky-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="https://github.com/tu-usuario" target="_blank" class="text-slate-500 hover:text-sky-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+        </header>
+
+        <main class="space-y-10">
+            <!-- Resumen Profesional -->
+            <section>
+                <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-sky-500 pb-2 mb-4">Resumen Profesional</h3>
+                <p class="text-slate-700 leading-relaxed">
+                    Desarrollador de Software con más de 5 años de trayectoria profesional, especializado en el desarrollo de soluciones backend robustas y escalables. Cuento con sólida experiencia en <strong>TypeScript</strong> y el ecosistema <strong>.NET/C#</strong>, además de conocimientos en <strong>Golang</strong>. He trabajado en proyectos para el sector Fintech, incluyendo el desarrollo de aplicaciones con capacidades <strong>Web3</strong>. Soy un profesional proactivo, con gran capacidad para la resolución de problemas y acostumbrado a trabajar en equipo para alcanzar los objetivos del producto.
+                </p>
+            </section>
+
+            <!-- Experiencia Laboral -->
+            <section>
+                <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-sky-500 pb-2 mb-6">Experiencia Laboral</h3>
+                <div class="space-y-8">
+                    <!-- Trabajo 1 -->
+                    <div class="card p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold text-slate-900">Desarrollador Backend</h4>
+                                <p class="text-md text-slate-700">TUCASH</p>
+                            </div>
+                            <p class="text-sm text-slate-500 font-medium">Agosto 2022 – Actualidad</p>
+                        </div>
+                        <ul class="mt-4 list-disc list-inside text-slate-700 space-y-2">
+                            <li>Desarrollo y mantenimiento de APIs con <strong>Golang</strong> para los productos principales de la compañía (Web Admin y App Móvil).</li>
+                            <li>Implementación de nuevas funcionalidades, refactorización de código y corrección de errores para mejorar la estabilidad y el rendimiento de la plataforma.</li>
+                            <li>Integración de servicios de terceros como <strong>Twilio</strong> y <strong>SendGrid</strong> para la gestión de comunicaciones.</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="tag">Golang</span><span class="tag">.NET</span><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">AngularJS</span><span class="tag">Azure</span>
+                        </div>
+                    </div>
+                    <!-- Trabajo 2 -->
+                    <div class="card p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold text-slate-900">Desarrollador Backend</h4>
+                                <p class="text-md text-slate-700">FINANCE EXPLORATION TECHNOLOGIES S.A.S</p>
+                            </div>
+                            <p class="text-sm text-slate-500 font-medium">Junio 2021 – Mayo 2022</p>
+                        </div>
+                        <ul class="mt-4 list-disc list-inside text-slate-700 space-y-2">
+                            <li>Participé en la construcción de una aplicación financiera con funcionalidades <strong>Web3</strong>, desarrollando herramientas personalizadas.</li>
+                            <li>Implementé comunicación de alto rendimiento entre microservicios utilizando <strong>gRPC</strong>.</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="tag">C#</span><span class="tag">.NET</span><span class="tag">gRPC</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span>
+                        </div>
+                    </div>
+                    <!-- Trabajo 3 -->
+                    <div class="card p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-semibold text-slate-900">Desarrollador Junior</h4>
+                                <p class="text-md text-slate-700">SYT MOVIL SAS</p>
+                            </div>
+                            <p class="text-sm text-slate-500 font-medium">Junio 2019 – Junio 2021</p>
+                        </div>
+                        <ul class="mt-4 list-disc list-inside text-slate-700 space-y-2">
+                            <li>Creación de servicios <strong>REST API</strong> en .NET para la migración de un sistema ERP legado (FoxPro) a una arquitectura moderna.</li>
+                        </ul>
+                        <div class="mt-4">
+                            <span class="tag">.NET</span><span class="tag">C#</span><span class="tag">SQL Server</span><span class="tag">Fast Report</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habilidades y Formación -->
+            <section class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-sky-500 pb-2 mb-4">Habilidades Técnicas</h3>
+                    <div class="space-y-3">
+                        <p><strong>Lenguajes:</strong> TypeScript, C#, Golang, SQL</p>
+                        <p><strong>Frameworks:</strong> .NET</p>
+                        <p><strong>Bases de Datos:</strong> SQL Server, PostgreSQL, MySQL</p>
+                        <p><strong>Cloud & DevOps:</strong> Azure, AWS, Docker Compose</p>
+                        <p><strong>Herramientas:</strong> Git, Postman, gRPC, Twilio, SendGrid, FastReport</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 border-b-2 border-sky-500 pb-2 mb-4">Formación y Cursos</h3>
+                    <div class="space-y-3">
+                        <p><strong>Tecnología en Sistemas</strong> | Centro Colombiano de Estudios Profesionales (2017)</p>
+                        <p><strong>Scrum Foundation Professional Certificate (SFPC)</strong> (2021)</p>
+                        <p><strong>Diplomado en Gerencia de Proyectos y Admin. de BD Oracle</strong> (2015)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-sm text-slate-500">
+            <p>Hoja de vida generada con asistencia de IA. Diseño por Gemini.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
