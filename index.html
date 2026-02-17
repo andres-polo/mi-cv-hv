@@ -9,26 +9,24 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         
-        /* Efecto de interacción para las tags similar a tu imagen */
         .tag-interactive { 
             display: inline-block; 
             background-color: #f1f5f9; 
             color: #334155; 
-            padding: 0.35rem 0.85rem; 
-            border-radius: 8px; 
-            font-size: 0.8rem; 
+            padding: 0.30rem 0.75rem; 
+            border-radius: 6px; 
+            font-size: 0.75rem; 
             font-weight: 600; 
-            margin: 0.25rem; 
+            margin: 0.15rem; 
             border: 1px solid #e2e8f0;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: default;
         }
         .tag-interactive:hover {
-            background-color: #e0f2fe; /* Azul muy claro */
-            color: #0369a1;           /* Azul cielo oscuro */
+            background-color: #e0f2fe;
+            color: #0369a1;           
             border-color: #bae6fd;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+            transform: translateY(-1px);
         }
 
         .card { background-color: white; border-radius: 0.75rem; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
@@ -51,6 +49,7 @@
                     <a href="mailto:andres.polo.ortega@gmail.com" class="text-sky-600 hover:underline">andres.polo.ortega@gmail.com</a>
                     <span>📞 3173564052</span>
                     <a href="https://linkedin.com/in/andres-felipe-polo-ortega-3ab575138/" class="text-sky-600 hover:underline">LinkedIn</a>
+                    <a href="https://github.com/andres-polo" class="text-sky-600 hover:underline">GitHub</a>
                 </div>
             </div>
         </header>
@@ -59,7 +58,7 @@
             <section>
                 <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-3">Perfil Profesional</h3>
                 <p class="text-lg text-slate-700">
-                    Desarrollador Backend con 5+ años de experiencia técnica. Especialista en el ecosistema <strong>.NET</strong> y <strong>TypeScript</strong>, con fuerte enfoque en <strong>Arquitectura Hexagonal</strong>, principios <strong>SOLID</strong> y <strong>Clean Code</strong>. Experto en diseñar soluciones escalables mediante <strong>Microservicios</strong> y <strong>gRPC</strong>. Poseo conocimientos prácticos en <strong>Golang</strong> para el desarrollo de microservicios eficientes y operaciones CRUD de alto rendimiento. Experiencia en el sector Fintech optimizando sistemas de alta disponibilidad.
+                    Desarrollador Backend con 5+ años de experiencia técnica. Especialista en el ecosistema <strong>.NET</strong> y <strong>TypeScript</strong>, con fuerte enfoque en <strong>Arquitectura Hexagonal</strong>, principios <strong>SOLID</strong> y <strong>Clean Code</strong>. Experto en diseñar soluciones escalables mediante <strong>Microservicios</strong> y <strong>gRPC</strong>. Poseo conocimientos prácticos en <strong>Golang</strong> para el desarrollo de microservicios eficientes. Experiencia en el sector Fintech optimizando sistemas de alta disponibilidad.
                 </p>
             </section>
 
@@ -75,9 +74,11 @@
                             <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">Agosto 2022 – Presente</span>
                         </div>
                         <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6 text-sm md:text-base">
+                        <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6 text-sm md:text-base">
                             <li>Responsable del mantenimiento evolutivo y optimización de servicios bajo <strong>Arquitectura Hexagonal</strong> con enfoque <strong>DDD</strong>, tras la migración desde sistemas legados.</li>
                             <li>Aseguré la estabilidad y escalabilidad del core de negocio mediante el desarrollo de APIs en <strong>.NET 8</strong> y componentes de alto rendimiento en <strong>Golang</strong>.</li>
                             <li>Integré servicios de mensajería (Twilio/SendGrid), logrando una automatización del 100% en flujos de comunicación crítica para los usuarios.</li>
+                        </ul>
                         </ul>
                         <div class="flex flex-wrap -ml-1">
                             <span class="tag-interactive">.NET 8</span>
@@ -110,62 +111,89 @@
                             <span class="tag-interactive">Docker</span>
                         </div>
                     </div>
-                    <div class="card p-6 border-l-4 border-transparent hover:border-sky-500">
-                        <div class="flex flex-col md:flex-row justify-between mb-4">
-                            <div>
-                                <h4 class="text-xl font-bold text-slate-900">Desarrollador Junior</h4>
-                                <p class="text-sky-600 font-semibold uppercase">SYT MOVIL SAS</p>
-                            </div>
-                            <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">Junio 2019 – Junio 2021</span>
-                        </div>
-                        <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6 text-sm md:text-base">
-                            <li>Creación de servicios <strong>REST API</strong> en .NET para la migración de un sistema ERP legado (FoxPro) a una arquitectura moderna. </li>
-                            <li>Implementación y gestión del patrón de diseño <strong>Multi-tenant</strong> para el aislamiento y escalabilidad de datos por cliente.</li>
-                        </ul>
-                        <div class="flex flex-wrap -ml-1">
-                            <span class="tag-interactive">.NET</span>
-                            <span class="tag-interactive">C#</span>
-                            <span class="tag-interactive">Multi-tenant</span>
-                            <span class="tag-interactive">SQL Server</span>
-                            <span class="tag-interactive">Fast Report</span>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </section>
 
             <section class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">Stack Tecnológico</h3>
-                    <ul class="space-y-3 text-sm">
-                        <li><strong>Dominio Principal:</strong> C#, .NET 8, TypeScript, SQL Server</li>
-                        <li><strong>Dominio Secundario:</strong> Golang (CRUDs & Operations), Node.js</li>
-                        <li><strong>Arquitectura:</strong> Hexagonal, SOLID, Microservicios, gRPC</li>
-                        <li><strong>Cloud:</strong> Azure, AWS, Docker Compose, CI/CD</li>
-                    </ul>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Dominio Principal</p>
+                            <div class="flex flex-wrap">
+                                <span class="tag-interactive">C#</span>
+                                <span class="tag-interactive">.NET 8</span>
+                                <span class="tag-interactive">TypeScript</span>
+                                <span class="tag-interactive">NestJS</span>
+                                <span class="tag-interactive">SQL Server</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Dominio Secundario & Ops</p>
+                            <div class="flex flex-wrap">
+                                <span class="tag-interactive">Golang</span>
+                                <span class="tag-interactive">Node.js</span>
+                                <span class="tag-interactive">Google Cloud (GCP)</span>
+                                <span class="tag-interactive">Docker</span>
+                                <span class="tag-interactive">CI/CD</span>
+                                <span class="tag-interactive">Azure/AWS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Arquitectura</p>
+                            <div class="flex flex-wrap">
+                                <span class="tag-interactive">Hexagonal</span>
+                                <span class="tag-interactive">Microservicios</span>
+                                <span class="tag-interactive">DDD</span>
+                                <span class="tag-interactive">SOLID</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4 font-bold">Formación e Idiomas</h3>
-                    <div class="space-y-4 text-sm">
-                        <div>
-                            <p class="font-bold text-slate-900">Tecnología en Sistemas</p>
-                            <p class="text-slate-600 italic">Centro Colombiano de Estudios Profesionales (2017)</p>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">Formación e Idiomas</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1">🎓</div>
+                            <div>
+                                <p class="font-bold text-slate-900 leading-none">Tecnología en Sistemas</p>
+                                <p class="text-slate-600 text-xs mt-1">Centro Colombiano de Estudios Profesionales</p>
+                                <p class="text-slate-600 text-xs">(2017)</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-bold text-slate-900">Scrum Foundation Professional (SFPC)</p>
-                            <p class="text-slate-600 italic">Certificado (2021)</p>
+                        <div class="flex items-start gap-3">
+                                <div class="mt-1">💼</div>
+                                <div>
+                                    <p class="font-bold text-slate-900 leading-tight text-xs md:text-sm">Diplomado Gerencia Proyectos y Admin. BD Oracle</p>
+                                    <p class="text-slate-600 text-xs">(2015)</p>
+                                </div>
+                            </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1">📜</div>
+                            <div>
+                                <p class="font-bold text-slate-900 leading-none">Scrum Foundation (SFPC)</p>
+                                <p class="text-slate-600 text-xs mt-1">Certiprof Certificado (2021)</p>
+                            </div>
                         </div>
-                        <div class="pt-2 border-t border-slate-100 flex flex-col gap-1">
-                            <p><strong>Español:</strong> Nativo</p>
-                            <p><strong>Inglés:</strong> A2 (Básico Profesional)</p>
-                            <p><strong>Francés:</strong> A1 (Básico)</p>
+                        
+                        <div class="pt-4 border-t border-slate-100">
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Idiomas</p>
+                            <div class="grid grid-cols-3 gap-2 text-xs">
+                                <div class="bg-slate-50 p-2 rounded text-center">
+                                    <span class="block font-bold">Español</span>
+                                    <span class="text-slate-500">Nativo</span>
+                                </div>
+                                <div class="bg-slate-50 p-2 rounded text-center">
+                                    <span class="block font-bold">Inglés</span>
+                                    <span class="text-slate-500">A2</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
     </div>
 
 </body>
