@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,73 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
-        
-        .tag-interactive { 
-            display: inline-block; 
-            background-color: #f1f5f9; 
-            color: #334155; 
-            padding: 0.30rem 0.75rem; 
-            border-radius: 6px; 
-            font-size: 0.75rem; 
-            font-weight: 600; 
-            margin: 0.15rem; 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        :root:lang(es) .en { display: none !important; }
+        :root:lang(en) .es { display: none !important; }
+
+        .tag-interactive {
+            display: inline-block;
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 0.30rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0.15rem;
             border: 1px solid #e2e8f0;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: default;
         }
+
         .tag-interactive:hover {
             background-color: #e0f2fe;
-            color: #0369a1;           
+            color: #0369a1;
             border-color: #bae6fd;
             transform: translateY(-1px);
         }
 
-        .card { background-color: white; border-radius: 0.75rem; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
-        @media print { .no-print { display: none; } body { background-color: white; } .card { border: none; box-shadow: none; } }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                background-color: white;
+            }
+
+            .card {
+                border: none;
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
+
 <body class="text-slate-800 leading-relaxed">
 
+    <!-- Language Switcher -->
+    <div class="fixed top-4 right-4 z-50 flex space-x-1 bg-white/80 backdrop-blur-md p-1 rounded-lg border border-slate-200 shadow-sm no-print">
+        <button onclick="setLanguage('es')" id="btn-es" class="px-3 py-1 rounded-md text-sm font-semibold transition-colors bg-sky-100 text-sky-700">ES</button>
+        <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 rounded-md text-sm font-semibold transition-colors text-slate-500 hover:bg-slate-100 hover:text-slate-700">EN</button>
+    </div>
+
     <div class="max-w-4xl mx-auto p-6 lg:p-12">
-        <header class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left mb-10 border-b pb-8">
+        <header
+            class="flex flex-col md:flex-row items-center md:items-start text-center md:text-left mb-10 border-b pb-8">
             <div class="w-28 h-28 mb-4 md:mb-0 md:mr-8">
-                <img src="IMG_8747-removebg-preview(1).png" alt="Andrés Felipe Polo Ortega" class="w-full h-full rounded-xl object-cover shadow-sm transition-transform duration-500 hover:scale-105">
+                <img src="IMG_8747-removebg-preview(1).png" alt="Andrés Felipe Polo Ortega"
+                    class="w-full h-full rounded-xl object-cover shadow-sm transition-transform duration-500 hover:scale-105">
             </div>
 
             <div class="flex-grow">
@@ -47,7 +83,7 @@
                 <div class="mt-4 text-slate-600 flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium">
                     <span class="flex items-center">📍 Cali, Colombia</span>
                     <a href="mailto:andres.polo.ortega@gmail.com" class="text-sky-600 hover:underline">andres.polo.ortega@gmail.com</a>
-                    <span>📞 3173564052</span>
+                    <span>📞 +57 3173564052</span>
                     <a href="https://linkedin.com/in/andres-felipe-polo-ortega-3ab575138/" class="text-sky-600 hover:underline">LinkedIn</a>
                     <a href="https://github.com/andres-polo" class="text-sky-600 hover:underline">GitHub</a>
                 </div>
@@ -56,14 +92,21 @@
 
         <main class="space-y-12">
             <section>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-3">Perfil Profesional</h3>
+                <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-3">
+                    <span class="es">Perfil Profesional</span>
+                    <span class="en">Professional Profile</span>
+                </h3>
                 <p class="text-lg text-slate-700">
-                    Desarrollador Backend con 5+ años de experiencia técnica. Especialista en el ecosistema <strong>.NET</strong> y <strong>TypeScript</strong>, con fuerte enfoque en <strong>Arquitectura Hexagonal</strong>, principios <strong>SOLID</strong> y <strong>Clean Code</strong>. Experto en diseñar soluciones escalables mediante <strong>Microservicios</strong> y <strong>gRPC</strong>. Poseo conocimientos prácticos en <strong>Golang</strong> para el desarrollo de microservicios eficientes. Experiencia en el sector Fintech optimizando sistemas de alta disponibilidad.
+                    <span class="es">Desarrollador Backend con 5+ años de experiencia técnica. Especialista en el ecosistema <strong>.NET</strong> y <strong>TypeScript</strong>, con fuerte enfoque en <strong>Arquitectura Hexagonal</strong>, principios <strong>SOLID</strong> y <strong>Clean Code</strong>. Experto en diseñar soluciones escalables mediante <strong>Microservicios</strong> y <strong>gRPC</strong>. Poseo conocimientos prácticos en <strong>Golang</strong> para el desarrollo de microservicios eficientes. Experiencia en el sector Fintech optimizando sistemas de alta disponibilidad.</span>
+                    <span class="en">Backend Developer with 5+ years of technical experience. Specialist in the <strong>.NET</strong> ecosystem and <strong>TypeScript</strong>, with a strong focus on <strong>Hexagonal Architecture</strong>, <strong>SOLID</strong> principles, and <strong>Clean Code</strong>. Expert in designing scalable solutions using <strong>Microservices</strong> and <strong>gRPC</strong>. Practical knowledge in <strong>Golang</strong> for efficient microservices development. Experience in the Fintech sector optimizing high-availability systems.</span>
                 </p>
             </section>
 
             <section>
-                <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-6">Experiencia Laboral</h3>
+                <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-6">
+                    <span class="es">Experiencia Laboral</span>
+                    <span class="en">Work Experience</span>
+                </h3>
                 <div class="space-y-6">
                     <div class="card p-6 border-l-4 border-transparent hover:border-sky-500">
                         <div class="flex flex-col md:flex-row justify-between mb-4">
@@ -71,14 +114,24 @@
                                 <h4 class="text-xl font-bold text-slate-900">Backend Software Engineer</h4>
                                 <p class="text-sky-600 font-semibold">TUCASH</p>
                             </div>
-                            <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">Agosto 2022 – Presente</span>
+                            <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">
+                                <span class="es">Agosto 2022 – Presente</span>
+                                <span class="en">August 2022 – Present</span>
+                            </span>
                         </div>
                         <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6 text-sm md:text-base">
-                        <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6 text-sm md:text-base">
-                            <li>Responsable del mantenimiento evolutivo y optimización de servicios bajo <strong>Arquitectura Hexagonal</strong> con enfoque <strong>DDD</strong>, tras la migración desde sistemas legados.</li>
-                            <li>Aseguré la estabilidad y escalabilidad del core de negocio mediante el desarrollo de APIs en <strong>.NET 8</strong> y componentes de alto rendimiento en <strong>Golang</strong>.</li>
-                            <li>Integré servicios de mensajería (Twilio/SendGrid), logrando una automatización del 100% en flujos de comunicación crítica para los usuarios.</li>
-                        </ul>
+                            <li>
+                                <span class="es">Responsable del mantenimiento evolutivo y optimización de servicios bajo <strong>Arquitectura Hexagonal</strong> con enfoque <strong>DDD</strong>, tras la migración desde sistemas legados.</span>
+                                <span class="en">Responsible for the evolutionary maintenance and optimization of services under <strong>Hexagonal Architecture</strong> with a <strong>DDD</strong> approach, following migration from legacy systems.</span>
+                            </li>
+                            <li>
+                                <span class="es">Aseguré la estabilidad y escalabilidad del core de negocio mediante el desarrollo de APIs en <strong>.NET 8</strong> y componentes de alto rendimiento en <strong>Golang</strong>.</span>
+                                <span class="en">Ensured the stability and scalability of the business core by developing APIs in <strong>.NET 8</strong> and high-performance components in <strong>Golang</strong>.</span>
+                            </li>
+                            <li>
+                                <span class="es">Integré servicios de mensajería (Twilio/SendGrid), logrando una automatización del 100% en flujos de comunicación crítica para los usuarios.</span>
+                                <span class="en">Integrated messaging services (Twilio/SendGrid), achieving 100% automation in critical communication flows for users.</span>
+                            </li>
                         </ul>
                         <div class="flex flex-wrap -ml-1">
                             <span class="tag-interactive">.NET 8</span>
@@ -96,12 +149,24 @@
                                 <h4 class="text-xl font-bold text-slate-900">Backend Developer</h4>
                                 <p class="text-sky-600 font-semibold">FINANCE EXPLORATION TECHNOLOGIES S.A.S</p>
                             </div>
-                            <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">Junio 2021 – Mayo 2022</span>
+                            <span class="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full h-fit">
+                                <span class="es">Junio 2021 – Mayo 2022</span>
+                                <span class="en">June 2021 – May 2022</span>
+                            </span>
                         </div>
                         <ul class="list-disc ml-5 text-slate-700 space-y-2 mb-6">
-                            <li>Implementé comunicación de alta velocidad entre microservicios mediante <strong>gRPC</strong>, optimizando el tráfico de red interno.</li>
-                            <li>Desarrollé sistemas de seguridad crítica, incluyendo <strong>MFA (Multi-Factor Authentication)</strong> para una aplicación Web3.</li>
-                            <li>Gestioné bases de datos relacionales garantizando la integridad de transacciones financieras.</li>
+                            <li>
+                                <span class="es">Implementé comunicación de alta velocidad entre microservicios mediante <strong>gRPC</strong>, optimizando el tráfico de red interno.</span>
+                                <span class="en">Implemented high-speed communication between microservices using <strong>gRPC</strong>, optimizing internal network traffic.</span>
+                            </li>
+                            <li>
+                                <span class="es">Desarrollé sistemas de seguridad crítica, incluyendo <strong>MFA (Multi-Factor Authentication)</strong> para una aplicación Web3.</span>
+                                <span class="en">Developed critical security systems, including <strong>MFA (Multi-Factor Authentication)</strong> for a Web3 application.</span>
+                            </li>
+                            <li>
+                                <span class="es">Gestioné bases de datos relacionales garantizando la integridad de transacciones financieras.</span>
+                                <span class="en">Managed relational databases guaranteeing the integrity of financial transactions.</span>
+                            </li>
                         </ul>
                         <div class="flex flex-wrap -ml-1">
                             <span class="tag-interactive">gRPC</span>
@@ -116,10 +181,16 @@
 
             <section class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">Stack Tecnológico</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">
+                        <span class="es">Stack Tecnológico</span>
+                        <span class="en">Tech Stack</span>
+                    </h3>
                     <div class="space-y-4">
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Dominio Principal</p>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">
+                                <span class="es">Dominio Principal</span>
+                                <span class="en">Core Domain</span>
+                            </p>
                             <div class="flex flex-wrap">
                                 <span class="tag-interactive">C#</span>
                                 <span class="tag-interactive">.NET 8</span>
@@ -129,7 +200,10 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Dominio Secundario & Ops</p>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">
+                                <span class="es">Dominio Secundario & Ops</span>
+                                <span class="en">Secondary Domain & Ops</span>
+                            </p>
                             <div class="flex flex-wrap">
                                 <span class="tag-interactive">Golang</span>
                                 <span class="tag-interactive">Node.js</span>
@@ -140,7 +214,10 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Arquitectura</p>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">
+                                <span class="es">Arquitectura</span>
+                                <span class="en">Architecture</span>
+                            </p>
                             <div class="flex flex-wrap">
                                 <span class="tag-interactive">Hexagonal</span>
                                 <span class="tag-interactive">Microservicios</span>
@@ -152,40 +229,64 @@
                 </div>
 
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">Formación e Idiomas</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-sky-600 mb-4">
+                        <span class="es">Formación e Idiomas</span>
+                        <span class="en">Education & Languages</span>
+                    </h3>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
                             <div class="mt-1">🎓</div>
                             <div>
-                                <p class="font-bold text-slate-900 leading-none">Tecnología en Sistemas</p>
+                                <p class="font-bold text-slate-900 leading-none">
+                                    <span class="es">Tecnología en Sistemas</span>
+                                    <span class="en">Systems Technology</span>
+                                </p>
                                 <p class="text-slate-600 text-xs mt-1">Centro Colombiano de Estudios Profesionales</p>
                                 <p class="text-slate-600 text-xs">(2017)</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                                <div class="mt-1">💼</div>
-                                <div>
-                                    <p class="font-bold text-slate-900 leading-tight text-xs md:text-sm">Diplomado Gerencia Proyectos y Admin. BD Oracle</p>
-                                    <p class="text-slate-600 text-xs">(2015)</p>
-                                </div>
+                            <div class="mt-1">💼</div>
+                            <div>
+                                <p class="font-bold text-slate-900 leading-tight text-xs md:text-sm">
+                                    <span class="es">Diplomado Gerencia Proyectos y Admin. BD Oracle</span>
+                                    <span class="en">Diploma in Project Management & Oracle DB Admin</span>
+                                </p>
+                                <p class="text-slate-600 text-xs">(2015)</p>
                             </div>
+                        </div>
                         <div class="flex items-start gap-3">
                             <div class="mt-1">📜</div>
                             <div>
                                 <p class="font-bold text-slate-900 leading-none">Scrum Foundation (SFPC)</p>
-                                <p class="text-slate-600 text-xs mt-1">Certiprof Certificado (2021)</p>
+                                <p class="text-slate-600 text-xs mt-1">
+                                    <span class="es">Certiprof Certificado (2021)</span>
+                                    <span class="en">Certiprof Certified (2021)</span>
+                                </p>
                             </div>
                         </div>
-                        
+
                         <div class="pt-4 border-t border-slate-100">
-                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">Idiomas</p>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-2">
+                                <span class="es">Idiomas</span>
+                                <span class="en">Languages</span>
+                            </p>
                             <div class="grid grid-cols-3 gap-2 text-xs">
                                 <div class="bg-slate-50 p-2 rounded text-center">
-                                    <span class="block font-bold">Español</span>
-                                    <span class="text-slate-500">Nativo</span>
+                                    <span class="block font-bold">
+                                        <span class="es">Español</span>
+                                        <span class="en">Spanish</span>
+                                    </span>
+                                    <span class="text-slate-500">
+                                        <span class="es">Nativo</span>
+                                        <span class="en">Native</span>
+                                    </span>
                                 </div>
                                 <div class="bg-slate-50 p-2 rounded text-center">
-                                    <span class="block font-bold">Inglés</span>
+                                    <span class="block font-bold">
+                                        <span class="es">Inglés</span>
+                                        <span class="en">English</span>
+                                    </span>
                                     <span class="text-slate-500">A2</span>
                                 </div>
                             </div>
@@ -196,5 +297,21 @@
         </main>
     </div>
 
+    <script>
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            const btnEs = document.getElementById('btn-es');
+            const btnEn = document.getElementById('btn-en');
+            
+            if (lang === 'es') {
+                btnEs.className = 'px-3 py-1 rounded-md text-sm font-semibold transition-colors bg-sky-100 text-sky-700';
+                btnEn.className = 'px-3 py-1 rounded-md text-sm font-semibold transition-colors text-slate-500 hover:bg-slate-100 hover:text-slate-700';
+            } else {
+                btnEn.className = 'px-3 py-1 rounded-md text-sm font-semibold transition-colors bg-sky-100 text-sky-700';
+                btnEs.className = 'px-3 py-1 rounded-md text-sm font-semibold transition-colors text-slate-500 hover:bg-slate-100 hover:text-slate-700';
+            }
+        }
+    </script>
 </body>
+
 </html>
